@@ -20,26 +20,32 @@ public class LocatorsLesson {
 
         // 8 locators in Selenium
         // Locator: id
-         driver.findElement(By.id("Form_submitForm_EmailHomePage")).sendKeys("test@test.com");
-        Thread.sleep(2000);
+      //   driver.findElement(By.id("Form_submitForm_EmailHomePage")).sendKeys("test@test.com");
+    //    Thread.sleep(2000);
 
         //locator: name
-        driver.findElement(By.linkText("Book a Free Demo")).click();
-        Thread.sleep(2000);
+    //    driver.findElement(By.linkText("Book a Free Demo")).click();
+    //    Thread.sleep(2000);
 
         //locator: partialLinkText (not recommended at all)
-        driver.findElement(By.partialLinkText("Book a Free")).click();
-        Thread.sleep(2000);
+    //    driver.findElement(By.partialLinkText("Book a Free")).click();
+     //   Thread.sleep(2000);
 
         //locator: cssSelector (recommended when ID is not available)
-        driver.findElement(By.cssSelector(".btn-tryit-free")).click();
-        Thread.sleep(2000);
+    //    driver.findElement(By.cssSelector(".btn-tryit-free")).click();
+    //    Thread.sleep(2000);
 
         //locator: xpath
-        driver.findElement(By.xpath("*[@id='Form_submitForm_action_request']")).click();
-        Thread.sleep(2000);
+    //    driver.findElement(By.xpath("*[@id='Form_submitForm_action_request']")).click();
+    //    Thread.sleep(2000);
 
-        driver.quit();
+    //    driver.quit();
+
+
+
+     //locator
+
+
 
 
 

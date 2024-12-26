@@ -46,7 +46,8 @@ public class MouseMovementConcept {
       Thread.sleep(2000);
 
 
-      //create a class named homepage.
+      //Exercise
+
 
 
 
