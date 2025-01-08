@@ -11,9 +11,9 @@ public class PracticeLesson {
 
     public static void main(String[] args) throws InterruptedException {
 
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
+//        WebDriver driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//        driver.manage().deleteAllCookies();
 //        driver.get("https://demo.automationtesting.in/Alerts.html");
 
 
@@ -32,7 +32,7 @@ public class PracticeLesson {
 
 //.  Exercise
 
-        driver.get("https://demo.automationtesting.in/Register.html");
+      //  driver.get("https://demo.automationtesting.in/Register.html");
 //    First name
 //     driver.findElement(By.xpath("//form[1]/div[1]/div[1]/input")).sendKeys("John");
 
@@ -101,38 +101,38 @@ public class PracticeLesson {
 
 //Date of Birth
 //Year
-      WebElement yearbox = driver.findElement(By.id("yearbox"));
-        Select forYearBox = new Select(yearbox);
-        forYearBox.selectByVisibleText("1995");
-        Thread.sleep(2000);
+//      WebElement yearbox = driver.findElement(By.id("yearbox"));
+//        Select forYearBox = new Select(yearbox);
+//        forYearBox.selectByVisibleText("1995");
+//        Thread.sleep(2000);
 
 
  // Month
-        WebElement monthBox = driver.findElement(By.xpath("//div[2]/select[1]"));
-        Select forMonthBox = new Select(monthBox);
-        forMonthBox.selectByVisibleText("July");
-        Thread.sleep(2000);
+//        WebElement monthBox = driver.findElement(By.xpath("//div[2]/select[1]"));
+//        Select forMonthBox = new Select(monthBox);
+//        forMonthBox.selectByVisibleText("July");
+//        Thread.sleep(2000);
 
 //Day
-      WebElement dayBox = driver.findElement(By.id("daybox"));
-      Select forDayBox = new Select(dayBox);
-      forDayBox.selectByVisibleText("20");
-      Thread.sleep(2000);
-
+//      WebElement dayBox = driver.findElement(By.id("daybox"));
+//      Select forDayBox = new Select(dayBox);
+//      forDayBox.selectByVisibleText("20");
+//      Thread.sleep(2000);
+//
 
 
 //   Password
-     driver.findElement(By.id("firstpassword")).sendKeys("abc123");
-     Thread.sleep(2000);
+//     driver.findElement(By.id("firstpassword")).sendKeys("abc123");
+//     Thread.sleep(2000);
 
 //.  Confirm password
-     driver.findElement(By.id("secondpassword")).sendKeys("abc123");
-     Thread.sleep(2000);
+//     driver.findElement(By.id("secondpassword")).sendKeys("abc123");
+//     Thread.sleep(2000);
 
 //  Submit Button
-     driver.findElement(By.id("submitbtn")).click();
-     Thread.sleep(2000);
-
+//     driver.findElement(By.id("submitbtn")).click();
+//     Thread.sleep(2000);
+//
 
 //   Refresh Button
 //     driver.findElement(By.id("Button1")).click();
@@ -140,7 +140,39 @@ public class PracticeLesson {
 
 
 
-     driver.quit();
+//     driver.quit();
+
+
+
+
+
+
+
+
+    //Practice Problems
+
+     WebDriver driver = new ChromeDriver();
+     driver.manage().window().maximize();
+     driver.manage().deleteAllCookies();
+     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+     driver.get("google.co.in");
+
+//     String title = driver.getTitle();
+//
+//     if(title.equals("google")){
+//         System.out.println("The Title is: + Google");
+//
+//        }else{
+//         System.out.println("Error");
+//     }
+
+
+
+
+
+
+
 
 
 
