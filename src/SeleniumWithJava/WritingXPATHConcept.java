@@ -121,7 +121,7 @@ public class WritingXPATHConcept {
 // Thread.sleep(2000);
 
  //Rule 7
- driver.findElement(By.xpath("//a[@href='https://www.citi.com/banking/bank-accounts?intc=citihpmenu_overview_bank-accounts' and @class='main-links plusIcon blueCustomerBtns blueAccPadding ng-star-inserted']")).click();
+ //driver.findElement(By.xpath("//a[@href='https://www.citi.com/banking/bank-accounts?intc=citihpmenu_overview_bank-accounts' and @class='main-links plusIcon blueCustomerBtns blueAccPadding ng-star-inserted']")).click();
  Thread.sleep(2000);
 
 

@@ -11,10 +11,14 @@ public class PracticeLesson {
 
     public static void main(String[] args) throws InterruptedException {
 
-//        WebDriver driver = new ChromeDriver();
-//        driver.manage().window().maximize();
-//        driver.manage().deleteAllCookies();
-//        driver.get("https://demo.automationtesting.in/Alerts.html");
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
+
+        driver.get("https://www.citi.com/");
 
 
 //        driver.findElement(By.linkText("Alert with OK & Cancel")).click();
@@ -151,12 +155,12 @@ public class PracticeLesson {
 
     //Practice Problems
 
-     WebDriver driver = new ChromeDriver();
-     driver.manage().window().maximize();
-     driver.manage().deleteAllCookies();
-     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//     WebDriver driver = new ChromeDriver();
+//     driver.manage().window().maximize();
+//     driver.manage().deleteAllCookies();
+//     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-     driver.get("google.co.in");
+//     driver.get("google.co.in");
 
 //     String title = driver.getTitle();
 //
@@ -169,9 +173,24 @@ public class PracticeLesson {
 
 
 
+//Homework
+//getText method
+
+
+//        WebElement web = driver.findElement(By.id("activate_card"));
+//        System.out.println(web.getText());
+//        Thread.sleep(2000);
+//        driver.quit();
 
 
 
+
+//         driver.findElement(By.xpath("//input[@id='username']")).sendKeys("John");
+//         Thread.sleep(2000);
+//
+//         driver.findElement(By.id("username")).clear();
+//         Thread.sleep(2000);
+//         driver.quit();
 
 
 
